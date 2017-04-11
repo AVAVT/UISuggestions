@@ -1,0 +1,65 @@
+.navbar.navbar-default{
+	margin-left: -15px;
+	margin-right: -15px;	
+	height: auto;
+}
+
+.search_input{
+	display: block;
+	width: 100%;
+	padding: 0 37px;
+	margin: 12px auto;
+	box-shadow: 0 1px 4px rgba(0,0,0,.12);
+	border-radius: 2px;
+	height: 3em;
+	border: 0 none;
+	color: #212121;
+}
+
+.search_button{
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	transform: translate(0, -50%);
+	background: transparent;
+	background-image: none;
+	color: #212121;
+	border: 0 none;
+	height: 24px;
+	padding: 0;
+}
+
+.navbar-toggle{
+	position: absolute;
+	left: 15px;
+	top: 50%;
+	transform: translate(0, -50%);
+	background: transparent;
+	background-image: none;
+	border: 0 none;
+	z-index: 10;
+	margin: 0;
+	padding: 0;
+}
+
+.panel{
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.navbar .navbar-toggle .icon-bar{
+	background-color: #212121;
+	border: 0 none;
+}
+
+.game_img {
+	width: 100%;
+}
+
+.game_img_container{
+	margin: -10px -10px 0 -10px;
+}
+
+.panel-body *{
+	vertical-align: bottom;
+}

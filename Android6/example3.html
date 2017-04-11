@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min2.css">
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap-material-design/css/bootstrap-material-design.min.css">
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap-material-design/css/ripples.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style3.css">
+		
+		<script src="libs/jquery.min.js"></script>
+		<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+		<script src="libs/bootstrap-material-design/js/ripples.min.js"></script>
+		<script src="libs/bootstrap-material-design/js/material.min.js"></script>
+	</head>
+	<body>
+		<header class="container-fluid game_header">
+			<div style="overflow: hidden">
+				<button class="button_back" onclick="window.location = 'example1.html';"><i class="material-icons">keyboard_backspace</i></button>
+			</div>
+			<div class="row text-center nav_tabs">
+				<div onclick="window.location='example2.html';" class="col-xs-4 tab_item">
+					<i class="material-icons">info</i>
+					<div>Information</div>
+				</div>
+				<div class="col-xs-4 tab_item tab_item_selected">
+					<i class="material-icons">description</i>
+					<div>Rules</div>
+				</div>
+				<div class="col-xs-4 tab_item">
+					<i class="material-icons">forum</i>
+					<div>Q&amp;A</div>
+				</div>
+			</div>
+		</header>
+		
+		<main class="container">
+			<h3 style="margin-bottom: 25px;"><i class="material-icons game_icon">schedule</i> Trình tự game </h3>
+			<p style="text-align: justify;">
+				<strong>A. Giai đoạn ban đêm:</strong> Mọi người nhắm mắt, Quản Trò gọi vai trò đặc biệt nào thì vai trò ấy mở mắt và thực hiện chức năng của mình trong yên lặng. Trình tự của Quản Trò như sau:
+			</p>
+			<ol>
+				<li>Ăn trộm (chỉ đêm đầu tiên)</li>
+				<li>Cupid (chỉ đêm đầu tiên)</li>
+				<li>2 người yêu nhau (chỉ đêm đầu tiên)</li>
+				<li>Bảo vệ</li>
+				<li>Sói</li>
+				<li>Tiên tri</li>
+				<li>Phù Thủy</li>
+				<li>Thổi sáo</li>
+				<li>Những người bị thôi miên</li>
+				<li>Già làng (chỉ đêm đầu tiên)</li>
+				<li>Thợ săn (chỉ đêm đầu tiên)</li>
+			</ol>
+			<p><strong>2. Ban ngày:</strong> Quản Trò ra hiệu cho mọi người mở mắt, thông báo những ai đã chết đêm qua. Sau đó, dân làng bình bầu treo cổ một người bị ngờ là Ma Sói trong ban ngày (có thể hoãn không treo). Nếu có 2 người có số phiếu bầu treo như nhau thì không ai bị treo cả.</p>
+			<hr>
+			
+			<h3 style="margin-bottom: 25px;"><i class="material-icons game_icon">filter_none</i> Các vai trong game</h3>
+			<img src="img/fortuneteller.png" style="width: 50%;">
+			<h4>1. Tiên tri</h4>
+			<p>Mỗi đêm, khi được gọi dậy Tiên tri sẽ chỉ một người. Nếu người ấy là sói quản trò sẽ gật đầu.</p>
+			<br>
+			<img src="img/hunter.png" style="width: 50%;">
+			<h4>2. Thợ săn</h4>
+			<p>Khi thợ săn chết, dù là dưới bất kỳ hình thức nào đều có thể chọn một người chơi khác và kéo hắn xuống "Tuyền Đường" cùng thợ săn.</p>
+			<br>
+		</main>
+	</body>
+</html>
