@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min2.css">
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap-material-design/css/bootstrap-material-design.min.css">
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap-material-design/css/ripples.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style2.css">
+
+		<script src="libs/jquery.min.js"></script>
+		<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+		<script src="libs/bootstrap-material-design/js/ripples.min.js"></script>
+		<script src="libs/bootstrap-material-design/js/material.min.js"></script>
+	</head>
+	<body>
+		<header class="container-fluid game_header">
+			<button class="button_back" onclick="window.location = 'example1.html';"><i class="material-icons">keyboard_backspace</i></button>
+			<div class="row text-center nav_tabs">
+				<div class="col-xs-4 tab_item tab_item_selected">
+					<i class="material-icons">info</i>
+					<div>Information</div>
+				</div>
+				<div onclick="window.location='example3.html';" class="col-xs-4 tab_item">
+					<i class="material-icons">description</i>
+					<div>Rules</div>
+				</div>
+				<div class="col-xs-4 tab_item">
+					<i class="material-icons">forum</i>
+					<div>Q&amp;A</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="container">
+			<h1>Werewolf Basic</h1>
+
+			<div class="row" style="margin-top: 30px;">
+				<div class="col-xs-6">
+					<i class="material-icons game_icon">supervisor_account</i>
+					<div style="overflow: hidden;">
+						<h3 class="game_info_h">8-18 players</h3>
+						<div>Suggested: 11-15</div>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<i class="material-icons game_icon">schedule</i>
+					<div style="overflow: hidden;">
+						<h3 class="game_info_h">30 mins</h3>
+					</div>
+				</div>
+			</div>
+
+			<hr>
+
+			<h3 style="margin-bottom: 25px;"><i class="material-icons game_icon">info</i> Description </h3>
+			<p style="text-align: justify;">
+				Werewolves of Miller's Hollow is a game that takes place in a small village which is haunted by werewolves. Each player is secretly assigned a role - Werewolf, Ordinary Townsfolk, or special character such as The Sheriff, The Hunter, the Witch, the Little Girl, The Fortune Teller and so on... There is also a Moderator player who controls the flow of the game. The game alternates between night and day phases. At night, the Werewolves secretly choose a Villager to kill. During the day, the Villager who was killed is revealed and is out of the game. The remaining Villagers (normal and special villagers alike) then deliberate and vote on a player they suspect is a Werewolf, helped (or hindered) by the clues the special characters add to the general deliberation. The chosen player is "lynched", reveals his/her role and is out of the game. Werewolf is a social game that requires no equipment to play, and can accommodate almost any large group of players.
+			</p>
+
+			<hr>
+
+			<h3 style="margin-bottom: 25px;"><i class="material-icons game_icon">filter_none</i> Categories</h3>
+			<div class="row">
+				<div class="col-xs-4">Bluffing</div>
+				<div class="col-xs-4">Deduction</div>
+				<div class="col-xs-4">Horror</div>
+				<div class="col-xs-4">Murder/Mystery</div>
+				<div class="col-xs-4">Party</div>
+				<div class="col-xs-4">Game</div>
+			</div>
+
+			<hr>
+
+			<h3 style="margin-bottom: 25px;"><i class="glyphicon glyphicon-king game_icon"></i> Mechanisms</h3>
+			<div class="row">
+				<div class="col-xs-4">Partnerships</div>
+				<div class="col-xs-4">Player</div>
+				<div class="col-xs-4">Elimination</div>
+				<div class="col-xs-4">Role</div>
+				<div class="col-xs-4">Playing</div>
+				<div class="col-xs-4">Variable</div>
+				<div class="col-xs-4">Player</div>
+				<div class="col-xs-4">Powers</div>
+				<div class="col-xs-4">Voting</div>
+			</div>
+		</main>
+	</body>
+</html>

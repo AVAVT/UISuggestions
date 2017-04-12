@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap-material-design/css/bootstrap-material-design.css">
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap-material-design/css/ripples.min.css">
+		<link rel="stylesheet" type="text/css" href="libs/slick/slick.css">
+		<link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css">
+		<link rel="stylesheet" type="text/css" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="style2.css">
+
+		<script src="libs/jquery.min.js"></script>
+		<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+		<script src="libs/bootstrap-material-design/js/ripples.min.js"></script>
+		<script src="libs/bootstrap-material-design/js/material.min.js"></script>
+		<script src="libs/slick/slick.min.js"></script>
+		<script src="libs/masonry.pkgd.min.js"></script>
+		<script>
+		$(document).ready(function(){
+			$('.da-slick').slick({
+			  dots: true,
+			  infinite: true,
+			  speed: 300,
+			  slidesToShow: 1,
+			  centerMode: true,
+				arrows: false,
+			  variableWidth: true
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<header class="container-fluid">
+			<div class="navbar navbar-default">
+				<a class="navbar-toggle" href="./example1.html">
+					<i class="material-icons">arrow_back</i>
+				</a>
+				<div class="navbar-brand">Cứu Net PRO</div>
+				<button class="search_button"><i class="material-icons">directions</i></button>
+			</div>
+		</header>
+		<img class="full_width feature_img" src="./img/monaco.jpg">
+		<div class="container">
+			<h1>Monaco Game</h1>
+			<p class="text-muted">Tầng 6, 22 Thành Công, Khu tập thể Bắc Thành Công, Ba Đình, Hà Nội</p>
+			<p class="text-warning">
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star-half-o" aria-hidden="true"></i>
+				<i class="fa fa-star-o" aria-hidden="true"></i>
+				&nbsp;3.5
+			</p>
+
+			<div class="row" style="margin-top: 50px;">
+				<div class="col-xs-6">
+					<i class="fa fa-usd game_icon"></i>
+					<div style="overflow: hidden;">
+						<h3 class="game_info_h">5000 - 7000/h</h3>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<i class="material-icons game_icon">schedule</i>
+					<div style="overflow: hidden;">
+						<h3 class="game_info_h">06:00 - 23:00</h3>
+						<div>Overnight</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-center" style="margin-top: 30px;">
+				<a href="javascript:void(0)" class="btn btn-raised btn-info">
+					Đặt chỗ
+					<div class="ripple-container"></div>
+				</a>
+				<a href="./example3.html" class="btn btn-default btn-info">
+					Xem máy còn
+					<div class="ripple-container"></div>
+				</a>
+			</div>
+			<hr>
+			<div class="text-center services row">
+				<div class="col-xs-4">
+					<i class="material-icons text-danger">smoke_free</i>
+					<p>Phòng không hút thuốc</p>
+				</div>
+				<div class="col-xs-4">
+					<i class="material-icons text-danger">local_parking</i>
+					<p>Có chỗ để xe</p>
+				</div>
+				<div class="col-xs-4">
+					<i class="material-icons text-danger">restaurant</i>
+					<p>Phục vụ ăn uống</p>
+				</div>
+			</div>
+			<hr>
+			<h3 style="margin-bottom: 25px;"><i class="material-icons game_icon">filter_none</i> 10 ảnh</h3>
+			<div class="slick-row">
+				<div class="da-slick">
+					<img src="./img/monaco.jpg">
+					<img src="./img/monaco2.jpg">
+					<img src="./img/monaco3.jpg">
+					<img src="./img/monaco4.jpg">
+					<img src="./img/monaco5.jpg">
+				</div>
+			</div>
+			<hr>
+			<h3 style="margin-bottom: 25px;"><i class="material-icons game_icon">chat</i> 19 bình luận</h3>
+			<div class="comment">
+				<img src="./img/huy.jpg" class="pull-left">
+				<div style="overflow: hidden;">
+					<h4>Người qua đường</h4>
+					<p>Quán đóng mẹ cửa rồi còn đâu?</p>
+				</div>
+			</div>
+			<div class="comment">
+				<img src="./img/huy.jpg" class="pull-left">
+				<div style="overflow: hidden;">
+					<h4>Anh hàng xóm</h4>
+					<p>Thật không ngờ, kể từ lúc Cường giúp Mẫn nấu ăn, cô liền bám lấy anh. Một hôm vào nửa đêm, Mẫn gõ cửa căn hộ của anh, cô bảo vòi sen nhà tắm của cô hư rồi, cho nên muốn mượn phòng tắm của anh dùng tạm, Cường đồng ý. Khi Mẫn tắm được nửa tiếng, bất ngờ cô nhờ anh lấy giùm khăn tắm bỏ quên ở phòng khách, Cường chuyển khăn tắm cho Mẫn qua khe cửa, anh không dám nhìn vào bên trong dù Mẫn cố tình mở rộng cánh cửa. Sau khi tắm xong, Mẫn quấn tạm chiếc khăn tắm và ngồi sát bên cạnh Cường, tư thế và dáng ngồi của Mẫn quả thật rất mê người, khiến anh khó dời tầm mắt.</p>
+					<p>Cường nghĩ, có lẽ Mẫn hiểu lầm anh là đàn ông độc thân nên cô mới chủ động tiếp cận. Ánh mắt nồng cháy của Mẫn khiến anh hiểu rõ cô muốn cùng anh phát sinh mối quan hệ tình ái. Cho dù là người đàn ông đã có gia đình nhưng... <a href="#">Chi tiết</a></p>
+				</div>
+			</div>
+			<div class="comment">
+				<img src="./img/huy.jpg" class="pull-left">
+				<div style="overflow: hidden;">
+					<h4>Trông xe tầng 1</h4>
+					<p>Thằng ở trên nói chuyện như l`</p>
+				</div>
+			</div>
+			<div class="text-center">
+					<button class="btn btn-info">Xem thêm bình luận <i class="material-icons">keyboard_arrow_down</i></button>
+			</div>
+		</div>
+	</body>
+</html>

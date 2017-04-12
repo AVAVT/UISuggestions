@@ -1,0 +1,150 @@
+body{
+  font-size: 16px;
+  background: #ffffff;
+}
+
+.space_right{
+	margin-right: 10px;
+}
+
+.nomargin{
+  margin: 0;
+}
+
+.nomargin-bottom{
+  margin-bottom: 0;
+}
+
+.full_width{
+  width: 100%;
+}
+
+.ellipsis{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.no_animate{
+  transition: all 0s !important;
+}
+
+.popup_wrapper{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  z-index: 2;
+}
+
+.popup_icon{
+  cursor: pointer;
+  z-index: 2 !important;
+}
+
+
+.popup_icon span{
+  transition: all 0.3s ease-in-out;
+  margin: 0 auto;
+  transform-origin: center center;
+}
+
+.popup_icon span:nth-child(2){
+  z-index: 2;
+}
+
+.popup_wrapper.active .popup_icon span:nth-child(1){
+  transform: translate(0, 6px) rotate(315deg) ;
+}
+
+.popup_wrapper.active .popup_icon span:nth-child(3){
+  transform: translate(0, -6px) rotate(225deg);
+}
+
+.popup_wrapper.active .popup_icon span:nth-child(2){
+  opacity: 0;
+  transform: rotate(180deg);
+}
+
+.popup_content{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 0;
+  background: #f44336;
+  opacity: 0;
+  z-index: 1;
+  transition: all .25s ease-out, height .25s ease-out .05s;
+  pointer-events: none;
+}
+
+.popup_wrapper.active .popup_content{
+  opacity: 1;
+  width: 100vw;
+  height: 100vh;
+  transition: all .25s ease-in, width .25s ease-in .05s;
+  pointer-events: all;
+}
+
+.popup_content .nav{
+  display: block;
+  position: absolute;
+  top: 70px;
+  left: 15px;
+}
+
+.popup_content .nav a,
+.popup_content .nav a:active,
+.popup_content .nav a:hover{
+  display: block;
+  background: transparent;
+  width: 100%;
+  color: white;
+  margin: 15px 0;
+  opacity: 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.popup_content .nav a .material-icons,
+.popup_content .nav a .fa{
+  font-size: 1.2em;
+  vertical-align: top;
+}
+
+.popup_wrapper.active .popup_content .nav a{
+  opacity: 1;
+
+}
+.popup_wrapper.active .popup_content .nav :nth-child(1){
+  transition: opacity .3s 0.25s;
+}
+
+.popup_wrapper.active .popup_content .nav :nth-child(2){
+  transition: opacity .3s 0.27s;
+}
+
+.popup_wrapper.active .popup_content .nav :nth-child(3){
+  transition: opacity .3s 0.29s;
+}
+
+.popup_wrapper.active .popup_content .nav :nth-child(4){
+  transition: opacity .3s 0.31s;
+}
+
+.popup_wrapper.active .popup_content .nav :nth-child(5){
+  transition: opacity .3s 0.35s;
+  margin-top: 100px;
+}
+
+.popup_wrapper.active .popup_content .nav :nth-child(6){
+  transition: opacity .3s 0.37s;
+}
+
+hr{
+  margin: 30px 0 35px 0;
+  background-color: #BDBDBD;
+}

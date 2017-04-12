@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap-material-design/css/bootstrap-material-design.min.css">
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap-material-design/css/ripples.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style1.css">
+
+		<script src="libs/jquery.min.js"></script>
+		<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+		<script src="libs/bootstrap-material-design/js/ripples.min.js"></script>
+		<script src="libs/bootstrap-material-design/js/material.min.js"></script>
+		<script src="libs/masonry.pkgd.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#item_list').masonry({
+					itemSelector: '.item_container',
+					columnWidth: '.item_container',
+					percentPosition: true
+				});
+
+				$('body').on('click', '.item_container', function(){
+					window.location = "example2.html";
+				})
+			});
+
+		</script>
+	</head>
+	<body>
+		<header class="container-fluid">
+			<div class="navbar navbar-default">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="col-xs-12">
+					<input type="text" placeholder="Search here" class="search_input">
+				</div>
+				<button class="search_button"><i class="material-icons">search</i></button>
+			</div>
+		</header>
+		<main class="container">
+			<div class="row" id="item_list">
+				<div class="col-xs-6 col-sm-3 item_container">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<div class="game_img_container">
+								<img class="game_img" src="img/werewolf.jpg">
+							</div>
+							<h3>Werewolf Basic</h3>
+							<div><i class="material-icons">supervisor_account</i> 8-18 players</div>
+							<div><i class="material-icons">schedule</i> 30 min</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-3 item_container">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<div class="game_img_container">
+								<img class="game_img" src="img/uno.jpg">
+							</div>
+							<h3>Uno</h3>
+							<div><i class="material-icons">supervisor_account</i> 2-10 players</div>
+							<div><i class="material-icons">schedule</i> 30 min</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-3 item_container">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<div class="game_img_container">
+								<img class="game_img" src="img/coup.jpg">
+							</div>
+							<h3>Coup</h3>
+							<div><i class="material-icons">supervisor_account</i> 2-6 players</div>
+							<div><i class="material-icons">schedule</i> 15 min</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-3 item_container">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<div class="game_img_container">
+								<img class="game_img" src="img/shadowhunters.jpg">
+							</div>
+							<h3>Shadow Hunters</h3>
+							<div><i class="material-icons">supervisor_account</i> 4-8 players</div>
+							<div><i class="material-icons">schedule</i> 45 min</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-3 item_container">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<div class="game_img_container">
+								<img class="game_img" src="img/explodingkittens.jpg">
+							</div>
+							<h3>Exploding Kittens</h3>
+							<div><i class="material-icons">supervisor_account</i> 2-5 players</div>
+							<div><i class="material-icons">schedule</i> 10-20 min</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

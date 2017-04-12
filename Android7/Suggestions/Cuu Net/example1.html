@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap-material-design/css/bootstrap-material-design.css">
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap-material-design/css/ripples.min.css">
+		<link rel="stylesheet" type="text/css" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="style1.css">
+
+		<script src="libs/jquery.min.js"></script>
+		<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+		<script src="libs/bootstrap-material-design/js/ripples.min.js"></script>
+		<script src="libs/bootstrap-material-design/js/material.min.js"></script>
+		<script src="libs/masonry.pkgd.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('body').on('click', '.popup_icon', function(){
+					$('.popup_content').removeClass('no_animate');
+					$(this).parent('.popup_wrapper').toggleClass('active');
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<header class="container-fluid">
+			<div class="navbar navbar-default">
+				<div class="popup_wrapper">
+					<button type="button" class="popup_icon navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+	        <section class="popup_content">
+	          <nav class="nav">
+							<a href="./example1.html"><i class="material-icons">directions</i>&nbsp;&nbsp;Tìm quanh đây</a>
+							<a href="#"><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp;&nbsp;Top phòng máy</a>
+							<a href="#"><i class="material-icons">whatshot</i>&nbsp;&nbsp;Đang khuyến mãi</a>
+							<a href="#"><i class="material-icons">new_releases</i>&nbsp;&nbsp;Mới mở cửa</a>
+							<a href="#"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;&nbsp;Hồ sơ</a>
+							<a href="#"><i class="fa fa-cog" aria-hidden="true"></i>&nbsp;&nbsp;Thiết lập</a>
+	          </nav>
+	        </section>
+	      </div>
+				<div class="navbar-brand">Cứu Net PRO</div>
+				<button class="search_button"><i class="material-icons">search</i></button>
+			</div>
+		</header>
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1862.3547232653941!2d105.82764827814155!3d21.004280974311296!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1491945536370" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<a href="example2.html" class="panel fake_location">
+			<img src="./img/monaco.jpg" class="pull-left space_right" width="100" height="100">
+			<div style="overflow: hidden;">
+				<h3 class="halfmargin">Monaco Game</h3>
+				<p class="text-muted ellipsis"><small>Tầng 6, 22 Thành Công, Khu tập thể Bắc Thành Công, Ba Đình, Hà Nội</small></p>
+				<div class="row">
+					<div class="col-xs-7 text-danger">
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star-half-o" aria-hidden="true"></i>
+						<i class="fa fa-star-o" aria-hidden="true"></i>
+						<i class="fa fa-star-o" aria-hidden="true"></i>
+						<i class="fa fa-star-o" aria-hidden="true"></i>
+						&nbsp;1.5
+					</div>
+					<div class="col-xs-5 text-right">
+						<i class="material-icons">smoke_free</i>
+						<i class="material-icons">local_parking</i>
+						<i class="material-icons">restaurant</i>
+					</div>
+				</div>
+			</div>
+		</a>
+		<a href="javascript:void(0)" class="btn btn-info btn-fab direction">
+			<i class="material-icons">directions</i><div class="ripple-container"></div>
+		</a>
+	</body>
+</html>
