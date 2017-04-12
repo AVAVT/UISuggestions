@@ -115,8 +115,11 @@ body{
   vertical-align: top;
 }
 
-.popup_wrapper.active .popup_content .nav a{
+.popup_wrapper.active .popup_content .nav a.active{
   opacity: 1;
+}
+.popup_wrapper.active .popup_content .nav a{
+  opacity: 0.7;
 
 }
 .popup_wrapper.active .popup_content .nav :nth-child(1){
