@@ -115,7 +115,9 @@ body{
   vertical-align: top;
 }
 
-.popup_wrapper.active .popup_content .nav a.active{
+.popup_wrapper.active .popup_content .nav a.active,
+.popup_wrapper.active .popup_content .nav a:active,
+.popup_wrapper.active .popup_content .nav a:hover{
   opacity: 1;
 }
 .popup_wrapper.active .popup_content .nav a{
