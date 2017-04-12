@@ -1,3 +1,6 @@
+body{
+	padding-bottom: 70px;
+}
 .navbar.navbar-default{
 	margin-left: -15px;
 	margin-right: -15px;
@@ -51,10 +54,8 @@
 	margin-top: -55%;
 }
 
-.empty{
-	margin-top: 30px;
-	color: #f44336;
-	font-size: 9rem;
+h2 {
+	margin-bottom: 0;
 }
 
 .seat_info{
